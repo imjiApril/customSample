@@ -32,7 +32,7 @@
    position: relative;
    z-index: 1;
    top: 293px;
-   left: 53%;
+   left: 50%;
 }
 .play{
    display: none;

@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+
+   var pagingWidth = $('#paging').width()/2;
+   // console.log('pagingWidth : ' + pagingWidth);
+   //컨트롤버튼 위치
+   $('.control').css({'marginLeft': pagingWidth-8})
+
    var list = $('.totalWidth'); //ul
    var show_num = 1; //보여질 이미지갯수&복제할이미지갯수
    var li_width = $('#show .totalWidth li div img').width(); //보여질 크기
@@ -16,7 +22,7 @@ $(document).ready(function(){
    }
 
    //이전/다음버튼 초기화
-   var arrow = $('#buttons .right');
+   // var arrow = $('#buttons .right');
 
    //복제하는 변수
    var copyObj = $('.totalWidth li:lt(' + show_num + ')').clone();
@@ -65,7 +71,7 @@ $(document).ready(function(){
    $('.control .play').click(function(e){
       e.preventDefault();
       //재생버튼 누르면 무조건 다음 이미지로 롤링
-      arrow = $('#buttons .right');
+      // arrow = $('#buttons .right');
       $(this).hide();
       $('.control .pause').show();
       //자동재생되는 상태가 계속 유지되고 있을 경우
