@@ -1,0 +1,96 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+   color: #000;
+}
+/* 좌우버튼 */
+#buttons{
+   box-sizing: border-box;
+   width: 455px;
+   position: relative;
+   top: 229px;
+   left: 50%;
+   transform: translate(-50%);
+}
+#buttons .left{
+   margin-right:200px;
+   cursor: pointer;
+}
+#buttons .right{
+   margin-left: 200px;
+   cursor: pointer;
+}
+.ion-chevron-left,
+.ion-chevron-right{
+   font-size: 50px;
+}
+/* 스탑/플레이 */
+.control{
+   position: relative;
+   z-index: 1;
+   top: 293px;
+   left: 53%;
+}
+.play{
+   display: none;
+}
+.pause{}
+/* 페이징 */
+#paging{
+   position: relative;
+   z-index: 1;
+   width: 60px;
+   left: 50%;
+   transform: translate(-50%);
+   top: 315px;
+}
+#paging li{
+   display: inline-block;
+   margin-right: 5px;
+}
+#paging li a{
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   background-color: black;
+   border-radius: 5px;
+   transition: 0.3s;
+}
+#paging li a.active,
+#paging li a:hover{
+   background-color: red;
+}
+#paging li a{
+   text-indent: -99999px;
+}
+
+/* 이미지 */
+#show{
+   width: 300px;
+   border: 1px solid red;
+   position: relative;
+   overflow: hidden;
+   left: 50%;
+   transform: translate(-50%);
+}
+#show .totalWidth{
+   width:1200px;
+   height: 300px;
+}
+#show .totalWidth li{
+   float: left;
+}
+#show .totalWidth li div{
+   width: 300px;
+   height: 300px;
+   border: 1px solid black;
+   display: inline-block;
+   float: left;
+}
+#show .totalWidth li div img{
+   width: 300px;
+   height: 300px;
+}
